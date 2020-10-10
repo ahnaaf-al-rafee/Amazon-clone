@@ -1,0 +1,48 @@
+How to build a Amazon Clone 🔥🔥🔥
+
+👉 create app with `npx create-react-app`
+
+👉 firebase setup
+
+👉 install react router
+	wrap the whole app comopent in `Router`
+	`Router`
+		`div`
+			`Switch`
+				`Route/~pathName~`
+
+👉 create `Header` component
+	{/* logo on the left */}
+     	{/* search box */}
+     	{/* 3 links */}
+      	{/* basket icon with number */}
+	use `nav` istead of `div`
+
+👉 create `Home` component to wrap the hole / into a component
+	🥊 banner 
+	🥊 products ---> create a `Product` component
+
+👉 totally fucking gibberish React Context Api 👎
+	`State Provider` component
+	// setup data layer 
+	// we need this to track the basket
+	create a const `stateContext`
+	build a PROVIDER and wrap the entire app in the provider
+		   👇
+	reducer, initialState, children
+	
+	in `index.js` wrap the `App` component in to StateProvider
+
+	create `reducer.js`
+	      👇
+	export const initialState
+	reducer switch
+	// THIS IS HOW WE USE IT INSIDE OF A COMPONENT
+	export const useStateValue = () => useContext(StateContext);
+
+	import hte useStateValue thing into the `Header` component where is the `basket` located
+
+👉 create the checkout page!!! 
+	`Checkout` component
+	👉 `CheckoutProduct` component
+			
